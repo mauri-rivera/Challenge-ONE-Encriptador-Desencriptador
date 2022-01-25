@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador/Desencriptador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Código Secreto</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form id="form-texto">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" name="texto" id="texto" placeholder="Ingrese el texto aqui">
+        <input class="btn" type="submit" value="Encriptar!" id="btn-encriptar">
+        <input class="btn" type="submit" value="Desencriptar!" id="btn-desencriptar">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <form id ="form-mensaje" name="fmensaje">
+        <h2 id="">Mensaje encriptada:</h2>
+        <input class="text-input" type="text" name="mensaje" id="msg"></input>
+        <input class="btn" type="submit" value="Copiar" id="btn-copy">
+      </form> 
+    </section>
+  </main>
+
+  <script src="javascript/validador.js"></script>
+  <script src="javascript/encriptador.js"></script>
+  <script src="javascript/desencriptador.js"></script>
+  <script src="javascript/copia-mensaje.js"></script>
+  <script src="javascript/repositorio-js.js"></script>
+
+  <br><br><br><br><br><br><br><br><br>
+
+  <footer class="main-rodapie">
+    <ul>
+      <p> &copy; 2022. Código Libre y Gratuito </p>
+      <li> Autor: Mauricio Rivera </li>
+      <li> Fecha Release: 24-01-2022 </li>
+      <li> Proyecto: Challenge ONE Encriptador/Desencriptador </li>
+    </ul>
+  </footer>
+</body>
+</html>
