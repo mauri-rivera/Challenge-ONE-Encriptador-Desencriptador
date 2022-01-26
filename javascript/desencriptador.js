@@ -7,7 +7,7 @@ palabraFraseDesencriptar.addEventListener("click", function(event){
 
     var arregloDesencriptacion = capturarTexto();  // Arreglo que utiliza la función capturarTexto
     var nuevoTextoDesencriptado = "";  // Variable encargada de concatenar carácteres y vocales encriptados
-    var acumulaTexto = "";  // Variabe encargada de concatenar carácteres para obtener un vocal encriptado
+    var acumulaTexto = "";  // Variable encargada de concatenar carácteres para obtener un vocal encriptado
     var i = 0;
     var j = 0;
     var k = 0;
