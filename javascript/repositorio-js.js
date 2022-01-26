@@ -11,34 +11,34 @@ function capturarMensaje(){
 }
 
 // Función encargado de intercambiar carácteres tanto validados, vocales encriptados y desencriptado
-function intercambiarCaracteres(arreglo1, arreglo2, arreglo3){
+function intercambiarCaracteres(arregloRecibeCaracter, arregloCondicionCaracter, arregloCaracterAgregado){
     
     var textoAcumulador = "";  // Variable encargada de concatenar carácteres, vocales encriptados y desencriptados
 
-    for(var i = 0; i < arreglo1.length; i++){
+    for(var i = 0; i < arregloRecibeCaracter.length; i++){
         // Se encripta el primer carácter encriptado o desencriptado
-        if(arreglo1[i] == arreglo2[0]){
-            arreglo1[i] = arreglo3[0];
+        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[0]){
+            arregloRecibeCaracter[i] = arregloCaracterAgregado[0];
         }
         // Se encripta el segundo carácter encriptado o desencriptado
-        if(arreglo1[i] == arreglo2[1]){
-            arreglo1[i] = arreglo3[1];
+        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[1]){
+            arregloRecibeCaracter[i] = arregloCaracterAgregado[1];
         }
         // Se encripta el tercer carácter encriptado o desencriptado
-        if(arreglo1[i] == arreglo2[2]){
-            arreglo1[i] = arreglo3[2];
+        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[2]){
+            arregloRecibeCaracter[i] = arregloCaracterAgregado[2];
         }
         // Se encripta el cuarto carácter encriptado o desencriptado
-        if(arreglo1[i] == arreglo2[3]){
-            arreglo1[i] = arreglo3[3];
+        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[3]){
+            arregloRecibeCaracter[i] = arregloCaracterAgregado[3];
         }
         // Se encripta el quinto carácter encriptado o desencriptado
-        if(arreglo1[i] == arreglo2[4]){
-            arreglo1[i] = arreglo3[4];
+        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[4]){
+            arregloRecibeCaracter[i] = arregloCaracterAgregado[4];
         }
 
         // Resultado de la concatenación de carácteres tanto validados, encriptados o desencriptados
-        var textoAcumulador = textoAcumulador + arreglo1[i];
+        var textoAcumulador = textoAcumulador + arregloRecibeCaracter[i];
     }
 
     return textoAcumulador;
