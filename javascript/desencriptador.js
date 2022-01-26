@@ -57,7 +57,7 @@ palabraFraseDesencriptar.addEventListener("click", function(event){
         }
 
         // Con los carácteres y las vocales encriptadas obtenidas, se inicia la desencriptación
-        // Variable que obtiene con la concatenación de carácteres y vocales encriptados
+        // Variable que obtiene con la concatenación de carácteres y vocales desencriptados
         nuevoTextoDesencriptado = intercambiarCaracteres(arregloCorregido, vocalesEncriptado, arregloVocales);
         
         agregarTexto("");
