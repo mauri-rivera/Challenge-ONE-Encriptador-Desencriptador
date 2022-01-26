@@ -19,7 +19,7 @@ Solo letras minusculas
 No se permite acentuación de palabras   
 */
 
-var textoExpresiónRegular = "^[a-z ]+$";   // Variable encargada de validar sólo letras minúsculas y espacios entre carácteres 
+var textoExpresionRegular = "^[a-z ]+$";   // Variable encargada de validar sólo letras minúsculas y espacios entre carácteres 
 var arregloTexto = [];   // Arreglo encargado de agregar carácteres validados 
 var arregloValidacion = [];  // Arreglo que utiliza la función validación para obtener el resultado de los carácteres 
 
@@ -29,7 +29,7 @@ var mensaje = document.querySelector("#msg");
 // Función encargado de validar carácteres
 function validador(campo){
     // Condición encargda de comprobar si los carácteres son validos o no lo son
-    if(campo.match(textoExpresiónRegular) != null){
+    if(campo.match(textoExpresionRegular) != null){
         for(var i = 0; i < campo.length; i++){
             // Se agrega los carácteres validados 
             arregloTexto.push(campo.substring(i,i+1));
