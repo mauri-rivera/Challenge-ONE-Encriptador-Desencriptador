@@ -20,19 +20,19 @@ function intercambiarCaracteres(arreglo1, arreglo2, arreglo3){
         if(arreglo1[i] == arreglo2[0]){
             arreglo1[i] = arreglo3[0];
         }
-        // Se encripta el primer carácter encriptado o desencriptado
+        // Se encripta el segundo carácter encriptado o desencriptado
         if(arreglo1[i] == arreglo2[1]){
             arreglo1[i] = arreglo3[1];
         }
-        // Se encripta el primer carácter encriptado o desencriptado
+        // Se encripta el tercer carácter encriptado o desencriptado
         if(arreglo1[i] == arreglo2[2]){
             arreglo1[i] = arreglo3[2];
         }
-        // Se encripta el primer carácter encriptado o desencriptado
+        // Se encripta el cuarto carácter encriptado o desencriptado
         if(arreglo1[i] == arreglo2[3]){
             arreglo1[i] = arreglo3[3];
         }
-        // Se encripta el primer carácter encriptado o desencriptado
+        // Se encripta el quinto carácter encriptado o desencriptado
         if(arreglo1[i] == arreglo2[4]){
             arreglo1[i] = arreglo3[4];
         }
