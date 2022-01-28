@@ -19,7 +19,7 @@ Solo letras minusculas
 No se permite acentuación de palabras   
 */
 
-var textoExpresionRegular = "^[a-z ]+$";   // Variable encargada de validar sólo letras minúsculas y espacios entre carácteres 
+var textoExpresionRegular = "^[a-zñ ]+$";   // Variable encargada de validar sólo letras minúsculas y espacios entre carácteres 
 var arregloTexto = [];   // Arreglo encargado de agregar carácteres validados 
 var arregloValidacion = [];  // Arreglo que utiliza la función validación para obtener el resultado de los carácteres 
 
