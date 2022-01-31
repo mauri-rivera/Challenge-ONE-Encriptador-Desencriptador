@@ -17,25 +17,19 @@ function intercambiarCaracteres(arregloRecibeCaracter, arregloCondicionCaracter,
 
     for(var i = 0; i < arregloRecibeCaracter.length; i++){
         // Se encripta el primer carácter encriptado o desencriptado
-        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[0]){
-            arregloRecibeCaracter[i] = arregloCaracterAgregado[0];
-        }
+        arregloRecibeCaracter[i] = recorrerCaracteres(arregloRecibeCaracter, arregloCondicionCaracter, arregloCaracterAgregado, i, 0);
+
         // Se encripta el segundo carácter encriptado o desencriptado
-        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[1]){
-            arregloRecibeCaracter[i] = arregloCaracterAgregado[1];
-        }
+        arregloRecibeCaracter[i] = recorrerCaracteres(arregloRecibeCaracter, arregloCondicionCaracter, arregloCaracterAgregado, i, 1);
+
         // Se encripta el tercer carácter encriptado o desencriptado
-        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[2]){
-            arregloRecibeCaracter[i] = arregloCaracterAgregado[2];
-        }
+        arregloRecibeCaracter[i] = recorrerCaracteres(arregloRecibeCaracter, arregloCondicionCaracter, arregloCaracterAgregado, i, 2);
+
         // Se encripta el cuarto carácter encriptado o desencriptado
-        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[3]){
-            arregloRecibeCaracter[i] = arregloCaracterAgregado[3];
-        }
+        arregloRecibeCaracter[i] = recorrerCaracteres(arregloRecibeCaracter, arregloCondicionCaracter, arregloCaracterAgregado, i, 3);
+
         // Se encripta el quinto carácter encriptado o desencriptado
-        if(arregloRecibeCaracter[i] == arregloCondicionCaracter[4]){
-            arregloRecibeCaracter[i] = arregloCaracterAgregado[4];
-        }
+        arregloRecibeCaracter[i] = recorrerCaracteres(arregloRecibeCaracter, arregloCondicionCaracter, arregloCaracterAgregado, i, 4);
 
         // Resultado de la concatenación de carácteres tanto validados, encriptados o desencriptados
         var textoAcumulador = textoAcumulador + arregloRecibeCaracter[i];
@@ -49,4 +43,13 @@ function agregarTexto(nuevoTexto){
     texto.value = nuevoTexto;   // Muestra la frase por pantalla desde el campo de texto "texto"
     texto.focus();
     arregloTexto = [];  
+}
+
+function recorrerCaracteres(arregloRecibeCaracter, arregloCondicionCaracter, arregloCaracterAgregado, itemFor, posicion){
+    // Recorre los arreglos según las condiciones asociados a los items o posiciones 
+    if(arregloRecibeCaracter[itemFor] == arregloCondicionCaracter[posicion]){
+        arregloRecibeCaracter[itemFor] = arregloCaracterAgregado[posicion];
+    }
+
+    return arregloRecibeCaracter[itemFor];
 }
