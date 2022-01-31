@@ -42,18 +42,9 @@ function validador(campo){
 // Función encargado de obtener el contenido de los campos de textos "texto" y "mensaje"
 function capturarTexto(){
     var form = document.querySelector("#form-texto");
-    var msg = document.querySelector("#form-mensaje");
     var campoTexto = form.texto.value;  // Variable encargada que contener la información desde el campo de texto "texto"
-    var campoMensaje = msg.mensaje.value;  // Variable encargada de contener la información desde el campo de texto "mensaje"
 
-    if(campoMensaje != " " && campoTexto != " "){
-        arregloValidacion = validador(campoTexto);  // Arreglo que utiliza la función validación
-        return arregloValidacion;
-    }
-
-    if(campoTexto != " " && campoMensaje == " "){
-        arregloValidacion = validador(campoTexto);  // Arreglo que utiliza la función validación
-        return arregloValidacion;
-    }
+    arregloValidacion = validador(campoTexto);  // Arreglo que utiliza la función validación
+    return arregloValidacion;
 }
 
