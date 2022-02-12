@@ -1,4 +1,3 @@
-
 /* Reglas de encriptación: 
 "e" es convertido para "enter" 
 "i" es convertido para "imes"

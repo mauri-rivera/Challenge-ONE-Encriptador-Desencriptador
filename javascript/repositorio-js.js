@@ -1,4 +1,3 @@
-
 var arregloVocales = ["a", "e", "i", "o", "u"];   // Arreglo que contiene las vocales
 var vocalesEncriptado = ["ai","enter","imes","ober","ufat"];  // Arreglo que contiene las vocales encriptadas
 
